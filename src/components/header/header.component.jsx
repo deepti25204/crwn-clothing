@@ -8,7 +8,9 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import './header.styles.scss';
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser }) => {
+  console.log(currentUser);
+  return (
   <div className='header'>
     <Link className='logo-container' to='/'>
       <Logo className='logo' />
@@ -20,6 +22,7 @@ const Header = ({ currentUser }) => (
       <Link className='option' to='/shop'>
         CONTACT
       </Link>
+      
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>
           SIGN OUT
@@ -32,7 +35,7 @@ const Header = ({ currentUser }) => (
     </div>
   </div>
 );
-
+      }
 const mapStateToProps = state => ({
   currentUser: state.user.currentUser
 })
