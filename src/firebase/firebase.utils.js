@@ -3,14 +3,24 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
+// const config = {
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+//   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+//   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+//   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+//   appId: process.env.REACT_APP_FIREBASE_APP_ID,
+//   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+// };
+
 const config = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyB4dv6XBYp4ozB2xHorh5TcTKIaNcoFU0g",
+  authDomain: "crwn-db-309ae.firebaseapp.com",
+  projectId: "crwn-db-309ae",
+  storageBucket: "crwn-db-309ae.appspot.com",
+  messagingSenderId: "1013707198180",
+  appId: "1:1013707198180:web:3d1d1b080d132e244a66f1",
+  measurementId: "G-LM2QTJE0TK"
 };
 
 firebase.initializeApp(config);

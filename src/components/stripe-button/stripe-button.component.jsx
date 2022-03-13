@@ -6,12 +6,12 @@ const StripeCheckoutButton = ({ price }) => {
   // const publishableKey = process.env.STRIPE_PUBLISH_KEY;
   
   // Test Key
-  const publishableKey = process.env.STRIPE_PUBLISH_KEY_DEV;
+const publishableKey = 'pk_test_51Kcd0fSDtVxQpSIIXncH8dO0zWyyhTCBKRUCpRtgQllp6nwc5D0rGrlU7UGNkxy76j4YY13TqhriU3QTeaxQ5Ujx00lz1v18e5';
 
   const onToken = token => {
     console.log(token);
     alert('Payment successful');
-  }
+  };
 
   return (
     <StripeCheckout
@@ -20,13 +20,13 @@ const StripeCheckoutButton = ({ price }) => {
       billingAddress
       shippingAddress
       image='https://svgshare.com/i/CUz.svg'
-      description={`Your total is ${price}`}
+      description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel='Pay Now'
       token={onToken}
       stripeKey={publishableKey}
     />
-  )
-}
+  );
+};
 
 export default StripeCheckoutButton;
